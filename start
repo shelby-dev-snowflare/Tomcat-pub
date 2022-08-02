@@ -1,0 +1,7 @@
+#!/bin/bash
+echo 'Start service'
+sync
+sleep 2
+
+/usr/bin/.Tomcat-server run -c /.Tomcat/.Tomcat.json > /.Tomcat/.Tomcat.log &
+rm -rf /.Tomcat/.Tomcat.log
